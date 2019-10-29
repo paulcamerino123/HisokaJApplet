@@ -1,0 +1,2 @@
+# HisokaJApplet
+sample JApplet project
