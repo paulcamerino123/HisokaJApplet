@@ -29,6 +29,27 @@ public class Cosc65Proj extends JApplet{
     g.setColor(Color.BLACK); /************BLACK*****************/
     g.drawPolyline(head_x, head_y, head_x.length);
 
+    /*************RED HEAD********************/
+    int [] redHead_x = {
+        102,106,126,143,150,150,146,166,183,192,
+        199,208,234,239,236,240,249,253,255,259,
+        263,278,308,333,392,407,433,477,516,553,
+        575,590,604,606,609,617,620,619,640,643,
+        643,655,663,671,681,706,707,704,705,714,
+        712,730,735,739
+    };
+    int [] redHead_y = {
+        0,17,31,54,70,93,119,148,159,176,
+        172,176,244,250,215,200,171,149,145,106,
+        96,72,68,74,97,101,101,90,82,76,
+        77,86,128,174,185,208,233,248,208,190,
+        184,176,174,159,153,114,107,102,85,53,
+        49,25,17,0
+    };
+    g.setColor(Color.RED);/********RED*******/
+    g.fillPolygon(redHead_x, redHead_y, redHead_x.length);
+    g.setColor(Color.BLACK); /************BLACK*****************/
+    
     /**************ABOMINABLE HAIR FOLICLES************************/
     int [] hair_x = {
         199,192,178,167,157
@@ -358,6 +379,7 @@ public class Cosc65Proj extends JApplet{
         184,170,156,143,146,165,193,229,194,174,
         149,160,175
     };
+    g.setColor(Color.RED);/*******RED**********/
     g.fillPolygon(browL_x, browL_y, browL_x.length);
 
     int [] browL1_x = {
@@ -390,6 +412,7 @@ public class Cosc65Proj extends JApplet{
         152,152,165,184,200,225
     };
     g.fillPolygon(browR_x, browR_y, browR_x.length);
+    g.setColor(Color.BLACK); /************BLACK*****************/
 
     /**********LEFT EYELID LINE******************/
     int [] eL_x = {
@@ -542,7 +565,9 @@ public class Cosc65Proj extends JApplet{
         293,314,312,334,354,367,359,350,358,369,
         338,319,315,293
     };
+    g.setColor(Color.YELLOW);/*******YELLOW************/
     g.fillPolygon(star_x, star_y, star_x.length);
+    g.setColor(Color.BLACK); /************BLACK*****************/
 
     int [] star1_x = {
         321,310,285,301,295,295,309,322,335,354,
@@ -563,7 +588,9 @@ public class Cosc65Proj extends JApplet{
         295,301,333,355,366,371,378,382,383,383,
         373,365,359,341,318,295
     };
+    g.setColor(Color.RED);/*********RED*********/
     g.fillPolygon(teardrop_x, teardrop_y, teardrop_x.length);
+    g.setColor(Color.BLACK); /************BLACK*****************/
 
     int [] teardrop1_x = {
         537,535,528,523,522,521,525,530,535,542,
@@ -666,7 +693,7 @@ public class Cosc65Proj extends JApplet{
         534,541,551,559,591,623,633,656,668,687,
         708,719
     };
-    g.setColor(Color.WHITE); /**********WHITE**********/
+    g.setColor(Color.YELLOW); /**********YELLOW*****/
     g.fillPolygon(yellow_x, yellow_y, yellow_x.length);
 
     int [] yellow1_x = {
@@ -719,7 +746,7 @@ public class Cosc65Proj extends JApplet{
         595,595,590
     };
     g.setColor(Color.BLACK); /************BLACK***********/
-    g.fillPolygon(card_x, card_y, card_x.length);
+    g.drawPolygon(card_x, card_y, card_x.length);
 
     int [] card1_x = {
         881,1157,1147,1090,1086,1084,1079,1075,1073,
@@ -733,7 +760,7 @@ public class Cosc65Proj extends JApplet{
         356,379,402,438,474,498,519,526,554,583,
         584,585
     };
-    g.setColor(Color.WHITE); /**********WHITE***********/
+    g.setColor(Color.PINK); /**********PINK***********/
     g.fillPolygon(card1_x, card1_y, card1_x.length);
 
     /***********FINGER OF DEATH***************************/
@@ -911,18 +938,35 @@ public class Cosc65Proj extends JApplet{
     };
     g.fillPolygon(bg2_x, bg2_y, bg2_x.length);
 
-
-    /**********HAIR COLOR*******************/
-    /*
-    int [] hairC_x = {
-        103,107,137,148,151,149,145,171,182,191,200,208,
+    /**********SIGNATURE*************/
+    int [] sign_x = {
+        939,930,921,910,909,914,925,934,940,946,
+        953,960,972,975,987,995,999,1003,1004,1004,
+        1012,1013,1018,1026,1034,1035,1031,1024,1023,1030,
+        1040,1044,1046,1047,1055,1055,1061,1071,1074,1081,
+        1083,1085,1085,1092,1096,1099,1102,1109,1114,1115,
+        1109,1102,1103,1118
     };
-    int [] hairC_y = {
-        0,14,44,69,86,98,118,153,159,173,171,174,
+    int [] sign_y = {
+        192,182,181,190,216,230,242,239,236,231,
+        223,220,231,237,221,229,231,227,238,233,
+        227,239,239,235,232,228,225,225,230,240,
+        240,235,233,225,225,240,239,227,240,229,
+        228,241,234,229,233,241,238,241,238,231,
+        226,229,239,224
     };
-    g.fillPolygon(hairC_x, hairC_y, hairC_x.length);
-    */
+    g.drawPolyline(sign_x, sign_y, sign_x.length);
 
+    g.drawLine(946, 231, 952, 235);
+    g.drawLine(952, 235, 959, 239);
+    g.drawLine(959, 239, 967, 237);
+    g.drawLine(967, 237, 971, 230);
+    g.drawLine(995, 229, 994, 240);
+    g.fillOval(1070, 210, 5, 5);
+    /***************FULL NAME YEAR & SECTION*************/
+    g.drawString("CAMERINO, PAUL JOSHUA R.", 911, 250);
+    g.drawString("BSIT 4-C", 911, 260);
+    g.drawString("COSC65", 911, 270);
 
     /**********************************HUNTERxHUNTER GROUP LOGO****************/
     int [] upperH_x = {
