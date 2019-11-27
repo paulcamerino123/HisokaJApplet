@@ -7,10 +7,16 @@
 
 import javax.swing.JApplet;
 import java.awt.*;
+import java.applet.AudioClip;
 
 public class Cosc65Proj extends JApplet{
     public void paint(Graphics g){
-        
+       
+        AudioClip hisoka = getAudioClip(getDocumentBase(), "hisoka.wav");
+        hisoka.play();
+        hisoka.loop();
+    
+
     /***************HEAD OUTLINE********/
     int [] head_x = {
         103,104,114,126,143,149,147,143,144,159,
