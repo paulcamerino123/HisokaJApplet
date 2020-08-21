@@ -5,7 +5,7 @@
 **TODO Try to recreate an image from a chosen character in an animation using JApplet**
 
 IMAGE CREATION THROUGH JAVA APPLET LIBRARY
-BY INTEGRATING **MS Paint** USING PIXEL TRACING
+BY THE HELP OF **MS Paint** USING PIXEL TRACING
 
 OPEN THE IMAGE IN **MS Paint**
 GO TO VIEW TAB
